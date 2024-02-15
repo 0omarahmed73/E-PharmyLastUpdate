@@ -35,6 +35,7 @@ export const AuthProvider = ({ children }) => {
     if (decodedUser.exp < currentTime) {
       Cookies.remove("user");
       setUser(null);
+      toast.error("انتهت الجلسة , الرجاء تسجيل الدخول مرة اخرى");
     }
   };
 
