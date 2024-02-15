@@ -32,7 +32,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         hideProgressBar
         className="mb-2"
         rtl={true}
-        limit={1}
       />
   </React.StrictMode>
 );
